@@ -15,6 +15,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/clinical")
 @CrossOrigin(origins = "*")
+@SuppressWarnings("null")
 public class ClinicalController {
 
     @Autowired

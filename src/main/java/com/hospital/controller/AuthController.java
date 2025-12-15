@@ -10,6 +10,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/auth")
 @CrossOrigin(origins = "*")
+@SuppressWarnings("null")
 public class AuthController {
 
     @Autowired
