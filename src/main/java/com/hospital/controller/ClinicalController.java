@@ -2,6 +2,7 @@ package com.hospital.controller;
 
 import com.hospital.entity.*;
 import com.hospital.repository.*;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,6 +17,7 @@ import java.util.UUID;
 @RequestMapping("/api/clinical")
 @CrossOrigin(origins = "*")
 @SuppressWarnings("null")
+@SecurityRequirement(name = "bearerAuth")
 public class ClinicalController {
 
     @Autowired
